@@ -1,10 +1,16 @@
-public class
-Main {
+public class Main {
+
     public static void main(String[] args) {
 
-        int[] arr = generateRandomArray();
-    }
+        int[] myArray = generateRandomArray();
 
+
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
+        }
+        System.out.printf("—умма трат за мес€ц %s рублей", sum);
+    }
 
         public static int[] generateRandomArray() {
             java.util.Random random = new java.util.Random();
