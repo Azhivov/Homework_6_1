@@ -17,14 +17,17 @@ public class Main {
         for (int i = 1; i < myArray.length; i++) {
             if (min < myArray[i]) {
                 min = myArray[i];
-            } else if (max < myArray[i]) ;
-            max = myArray[i];
+            } else if (max < myArray[i]) {
+                ;
+                max = myArray[i];
+            }
         }
+
         System.out.printf("ћинимальна€ сумма за день составила %s рублей. " +
                 "ћмаксимальна€ сумма за день составила %s рублей. \n", min, max);
 
         double average = (double) sum / myArray.length;
-        String averageSum = String.format(".2f", average);
+        String averageSum = String.format("%.2f", average);
         System.out.printf("—редн€€ сумма трат за мес€ц составила %s рублей\n", averageSum);
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
