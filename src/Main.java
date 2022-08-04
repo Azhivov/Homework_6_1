@@ -20,6 +20,7 @@ public class Main {
             } else if (max < myArray[i]) {
                 max = myArray[i];
             }
+
         }
 
         System.out.printf("Минимальная сумма за день составила %s рублей. " +
